@@ -5,6 +5,9 @@
   min-height: 800px;
   max-height: 840px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 .user_infoCard {
   display: grid;
@@ -61,12 +64,10 @@
 }
 .list_wrapper {
   overflow-y: auto;
-  height: 500px;
+  flex-grow: 1;
 }
 .cards_list {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  height: 100%;
 }
 .user_card {
   height: 50px;
