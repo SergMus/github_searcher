@@ -1,0 +1,114 @@
+.container {
+  width: 50%;
+  border: 1px solid grey;
+  margin-left: 10px;
+  min-height: 800px;
+  max-height: 840px;
+  overflow: hidden;
+}
+.user_infoCard {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 10px;
+}
+.card_avatar {
+  border: 1px solid grey;
+  border-left: none;
+}
+.card_aside {
+  border: 1px solid grey;
+  border-right: none;
+  border-left: none;
+  padding: 12px 0px;
+}
+.card_header {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 13px;
+  background-color: rgb(241, 241, 241);
+  margin: 0px 15px;
+  padding: 15px 0;
+  border: 1px solid grey;
+  border-bottom: none;
+}
+.desc {
+  padding: 2px 6px;
+  border-radius: 5px;
+  color: white;
+}
+.desc1 {
+  background-color: dodgerblue;
+}
+.desc2 {
+  background-color: coral;
+}
+.desc3 {
+  background-color: limegreen;
+}
+.card_description {
+  display: grid;
+  grid-template-rows: repeat(5, 50px);
+  padding: 0 15px;
+}
+.card_rows {
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.card_rows:not(:first-child) {
+  border-top: none;
+}
+.list_wrapper {
+  overflow-y: auto;
+  height: 500px;
+}
+.cards_list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.user_card {
+  height: 50px;
+  max-width: 100%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 25px;
+  background-color: #eef0f6;
+  color: rgb(88, 88, 88);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+.user_card:first-child {
+  margin-top: 20px;
+}
+.user_card:nth-child(odd) {
+  background-color: #cfdaec;
+}
+.user_card:hover {
+  background-color: white;
+}
+.user_repos {
+  font-size: 14px;
+  color: white;
+  width: 110px;
+}
+.thumb {
+  display: flex;
+  color: white;
+}
+.thumb_text {
+  background-color: #b3b2b2;
+  padding: 1px 8px 1px 10px;
+  width: 50px;
+  border-radius: 5px 0 0 5px;
+}
+.thumb_num {
+  background-color: white;
+  color: rgb(88, 88, 88);
+  flex: 1;
+  border-radius: 0 5px 5px 0;
+  padding: 1px 6px;
+}
