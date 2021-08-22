@@ -5,3 +5,11 @@
   margin: 50px auto;
   display: flex;
 }
+
+@media screen and (max-width: 992px) {
+  .App {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 5px;
+  }
+}

@@ -2,7 +2,7 @@
   width: 50%;
   border: 1px solid grey;
   margin-left: 10px;
-  min-height: 800px;
+  min-height: 500px;
   max-height: 840px;
   overflow: hidden;
   display: flex;
@@ -17,6 +17,10 @@
 .card_avatar {
   border: 1px solid grey;
   border-left: none;
+}
+.image {
+  width: 100%;
+  min-height: 200px;
 }
 .card_aside {
   border: 1px solid grey;
@@ -112,4 +116,29 @@
   flex: 1;
   border-radius: 0 5px 5px 0;
   padding: 1px 6px;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .user_infoCard {
+    margin-top: 5px;
+  }
+  .image {
+    min-height: auto;
+  }
+  .card_header {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.7rem;
+  }
+  .desc:not(:last-child) {
+    margin-right: 5px;
+  }
+  .card_description {
+    font-size: 0.85rem;
+  }
 }

@@ -56,7 +56,7 @@ const ReposDisplay = ({ currentUser, userFromStorage }) => {
                 : "https://mpng.subpng.com/20180717/cz/kisspng-avatar-youtube-person-kahoot-a-roommate-who-plays-with-a-cell-phone-5b4d74010dd214.7783760115318026250566.jpg"
             }
             alt=""
-            style={{ width: "100%", minHeight: "200px" }}
+            className={styles.image}
           />
           <h4>
             <b>{currentUser.name}</b>
